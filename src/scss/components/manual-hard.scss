@@ -1,0 +1,56 @@
+/* Устанавливаем базовый размер шрифта в rem */
+html {
+    font-size: 16px;
+}
+
+/* Общие стили */
+h2 {
+    font-size: 1.5rem; /* 1.5rem вместо 24px */
+}
+
+/* Стили для секции с изображениями */
+.image-section {
+    float: left;
+
+    box-sizing: border-box;
+    width: 50%;
+    padding: 1rem;
+}
+
+.image-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    margin: 1rem;
+
+    cursor: pointer;
+}
+
+/* Стили для секции с выбранными изображениями */
+.selected-images {
+    float: left;
+
+    box-sizing: border-box;
+    width: 50%;
+    padding: 1rem;
+}
+
+.selected-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selected-item {
+    margin: 1rem;
+}
+
+/* Кнопка для генерации PDF */
+#generate-pdf {
+    display: block;
+
+    margin-top: 1rem;
+
+    font-size: 2rem;
+}

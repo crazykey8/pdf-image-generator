@@ -1,0 +1,4 @@
+{
+  "img": ["data-src1", "data-src2"],
+  "source": ["data-srcset1", "data-srcset2"]
+}

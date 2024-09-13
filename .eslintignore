@@ -1,0 +1,10 @@
+/.git
+/.vscode
+node_modules
+src/api/generated
+.eslintcache
+/.parcel-cache
+/.husky
+/dist
+/src/scripts/modules/api/generated
+build.js

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "target": "ESNext",
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "types": ["node"],
+    "paths": {
+      "@images/*": ["./images/*"],
+      "declare": ["./scripts/declare"],
+      "utils": ["./scripts/modules/utils/index"],
+      "api": ["./scripts/modules/api/index"],
+      "metrics": ["./scripts/modules/metrics/index"],
+      "@modules/*": ["./scripts/modules/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "dist", "build.js"]
+}

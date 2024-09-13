@@ -1,0 +1,10 @@
+node_modules
+dist
+preprod
+.parcel-cache
+.cache
+.DS_Store
+.idea
+.vscode
+.eslintcache
+*:Zone.Identifier

@@ -1,0 +1,80 @@
+{
+  "name": "parcel-template",
+  "version": "1.0.0",
+  "description": "parcel template",
+  "private": true,
+  "scripts": {
+    "parcel-dev": "parcel src/*.html --https --no-cache",
+    "build:preprod": "parcel build src/*.html --public-url ./",
+    "build:prod": "parcel build src/*.html --no-source-maps",
+    "lint:check": "eslint --cache .",
+    "lint:fix": "eslint --cache --fix  .",
+    "format:check": "prettier --check .",
+    "format:fix": "npx csscomb src/scss; prettier --write .",
+    "prepare": "husky install"
+  },
+  "ntl": {
+    "descriptions": {
+      "parcel-dev": "Parcel dev server",
+      "build:preprod": "Build for preprod server",
+      "build:prod": "Build for deploy"
+    }
+  },
+  "lint-staged": {
+    "*.{html,scss,css,ts,js,json}": [
+      "prettier --write"
+    ],
+    "*.{ts,js}": [
+      "eslint --fix"
+    ]
+  },
+  "author": "AVZuykov",
+  "license": "ISC",
+  "browserslist": "> 0.25%, not dead",
+  "devDependencies": {
+    "@parcel/optimizer-terser": "^2.9.3",
+    "@parcel/resolver-glob": "^2.9.3",
+    "@parcel/transformer-sass": "2.9.3",
+    "@types/js-cookie": "^3.0.4",
+    "@types/node": "^20.6.3",
+    "@types/smoothscroll-polyfill": "^0.3.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "crypto-browserify": "^3.12.0",
+    "csscomb": "^4.3.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "events": "^3.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "ntl": "^5.1.0",
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.9.3",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "parcel-resolver-tspaths": "^0.0.9",
+    "parcel-transformer-html-datasrc": "^1.3.3",
+    "path-browserify": "^1.0.1",
+    "posthtml-include": "^1.7.4",
+    "prettier": "^3.0.3",
+    "process": "^0.11.10",
+    "rimraf": "^5.0.1",
+    "sharp": "0.31.3",
+    "stream-browserify": "^3.0.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@vimeo/player": "^2.20.1",
+    "animejs": "^3.2.1",
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "js-cookie": "^3.0.5",
+    "jspdf": "^2.5.1",
+    "moment": "^2.29.4",
+    "normalize.css": "^8.0.1",
+    "overlayscrollbars": "^2.3.2",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^10.3.0"
+  }
+}

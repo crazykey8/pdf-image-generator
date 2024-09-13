@@ -1,0 +1,23 @@
+{
+  "extends": "@parcel/config-default",
+  "resolvers": [
+    "...",
+    "@parcel/resolver-glob",
+    "parcel-resolver-tspaths"
+  ],
+  "optimizers": {
+    "*.js": [
+      "@parcel/optimizer-terser"
+    ]
+  },
+  "transformers": {
+    "*.html": [
+      "...",
+      "parcel-transformer-html-datasrc"
+    ]
+  },
+  "reporters": [
+    "...",
+    "parcel-reporter-static-files-copy"
+  ]
+}
